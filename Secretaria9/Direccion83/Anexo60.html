@@ -1,0 +1,1427 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERMMy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../../javascript/ScriptsSite/data.js"></script>
+    <script src="../../javascript/jquery-3.4.1.js"></script>
+    <script src="../../javascript/jquery.validate.es.js"></script>
+    <script src="../../javascript/jquery.validate.js"></script>
+
+    <link href="../../contenido/font-awesome.css" rel="stylesheet" />
+    <link href="../../contenido/bootstrap.css" rel="stylesheet" />
+    <link href="../../javascript/DataTableV2/DataTables-1.13.1/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="../../contenido/LayoutMaster.css" rel="stylesheet" />
+    <script src="../../javascript/DataTableV2/DataTables-1.13.1/js/jquery.dataTables.js"></script>
+    <script src="../../javascript/bootstrap.js"></script>
+
+    <script src="../../javascript/DataTableV2/datatable-order-dom-checkbox.js"></script>
+    <script src="../../javascript/moment/moment-datetime.js"></script>
+    <script src="../../javascript/moment/moment.min.js"></script>
+    <link href="../../contenido/jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet" />
+    <script src="../../contenido/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="../../javascript/jquery.ui.datepicker.validation.js"></script>
+</head>
+<body class="o-layout" id="b-body">
+    <div class="o-body-container">
+        <div class="o-lista-anexos">
+
+            <div id="encabezado" class="o-alert">
+                <span id="nombre_encabezado">
+                    Detalle de Anexo
+                </span>
+            </div>
+
+            <div id="filtros" class="o-div-bordered">
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <table>
+                            <tr>
+                                <td class="text-right"><label id="lblAnexo">Anexo</label></td>
+                                <td class="text-left">
+                                    &nbsp;<label style="font-weight: normal;" id="lblDescAnexo">
+                                        X-10. Relaci&#243;n de Enseres Menores.
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><label>Asignado a:</label></td>
+                                <td class="text-left">
+                                    &nbsp;<label style="font-weight: normal;" id="lblAsignadoA">
+                                        Usuario(a) Concentrador(a)
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div>
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <div id="form_botones">
+                            <a class="o-icon o-black"
+                               href="PDF/7486/ArchivoAdjunto.html"><button type="button" class="btn btn-success">Consultar PDF</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div>
+                <form id="form-tabla">
+                        <label style="font-weight: normal;"> Cant. Registros: 69 </label>
+                    <table id="tbl-anexos" class="table table-bordered table-striped o-table responsive u-width-100p">
+                        <thead class="o-tab-header__black" id="th-anexos">
+                            <tr class="o-white__font">
+
+                                        <th class="text-center">
+                                            Inventario
+                                        </th>
+                                        <th class="text-center">
+                                            Descripcion
+                                        </th>
+                                        <th class="text-center">
+                                            Condiciones
+                                        </th>
+                                        <th class="text-center">
+                                            No. Empleado
+                                        </th>
+                                        <th class="text-center">
+                                            Nombre de Resguardante
+                                        </th>
+                                        <th class="text-center">
+                                            Estatus
+                                        </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb-anexos">
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060462                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211374                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONICA MEDELLIN ESTRADA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060370                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211374                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONICA MEDELLIN ESTRADA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060180                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211374                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONICA MEDELLIN ESTRADA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060458                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4070220                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONITOR LENOVO THINKVISION S22E-20 21.5�
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060356                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060177                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4070115                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONITOR LENOVO THINKVISION S22E-20 21.5�
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4088202                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SEAGATE DISCO DURO EXTERNO PORTATIL 1TB NEGRO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4088201                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SEAGATE DISCO DURO EXTERNO PORTATIL 1TB NEGRO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4088172                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DISCO DURO SEAGATE EXTERNO PORTATIL 2TB
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060359                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+212290                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARIA GUADALUPE JUAREZ RUIZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4069382                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONITOR LENOVO THINKVISION
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4073511                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DISCO DURO SEAGATE 1TB
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+211483                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                YERALDIN ODALYS AGUILAR AGUILAR
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060467                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+212290                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARIA GUADALUPE JUAREZ RUIZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060470                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+212917                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                JESUS EMMANUEL GARCIA CASTRO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4069371                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONITOR LENOVO THINKVISION
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060350                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060351                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060430                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA DE VISITA TIPO A
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4061661                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                PERCHERO P/ABRIGOS Y SOMBREROS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060358                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+212917                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                JESUS EMMANUEL GARCIA CASTRO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060431                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA DE VISITA TIPO A
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4061852                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060432                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA DE VISITA TIPO A
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060179                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+212917                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                JESUS EMMANUEL GARCIA CASTRO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060424                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA DE VISITA TIPO A
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060455                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060475                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060453                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060454                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060369                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060456                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060354                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060371                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060460                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060367                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214333                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ESTEPHANY FLORES PALAFOX
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060178                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060355                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4069374                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONITOR LENOVO THINKVISION
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214336                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARTIN  DE LA TORRE VAZQUEZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060181                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060473                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214336                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARTIN  DE LA TORRE VAZQUEZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060185                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060461                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060357                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060363                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214336                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARTIN  DE LA TORRE VAZQUEZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060186                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060187                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4059927                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ROTAFOLIO ICE BOARD 90X70 CM
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060184                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214336                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARTIN  DE LA TORRE VAZQUEZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4093838                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                LICENCIA SOFTWARE SENTRY BUSINESS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060464                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060360                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4070266                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MONITOR LENOVO THINKVISION S22E-20 21.5�
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214479                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MICHELLE SARAHI GUTIERREZ GARCIA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060477                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213966                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                KARLA MARICRUZ RUIZ DIAZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060465                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214479                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MICHELLE SARAHI GUTIERREZ GARCIA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060365                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213966                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                KARLA MARICRUZ RUIZ DIAZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060182                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213966                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                KARLA MARICRUZ RUIZ DIAZ
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060352                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213967                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                JESUS TRINIDAD LOZANO MEDINA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060468                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213967                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                JESUS TRINIDAD LOZANO MEDINA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060183                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MAMPARA METALICA 1.10MTS P/MODULOS
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213967                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                JESUS TRINIDAD LOZANO MEDINA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060366                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214479                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MICHELLE SARAHI GUTIERREZ GARCIA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060466                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060472                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+214333                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ESTEPHANY FLORES PALAFOX
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060361                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060471                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060364                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060474                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SILLA SEMI EJECUTIVA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                                <tr>
+
+                                            <td class="text-right celda-cortada">
+4060368                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVERO CON RODAJAS PREC.
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                BUENO
+                                            </td>
+                                                                                <td class="text-right celda-cortada">
+213118                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                DANIELA RAMIREZ CANO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                AUTORIZADO
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                        </tbody>
+                    </table>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

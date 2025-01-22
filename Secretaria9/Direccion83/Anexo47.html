@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERMMy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../../javascript/ScriptsSite/data.js"></script>
+    <script src="../../javascript/jquery-3.4.1.js"></script>
+    <script src="../../javascript/jquery.validate.es.js"></script>
+    <script src="../../javascript/jquery.validate.js"></script>
+
+    <link href="../../contenido/font-awesome.css" rel="stylesheet" />
+    <link href="../../contenido/bootstrap.css" rel="stylesheet" />
+    <link href="../../javascript/DataTableV2/DataTables-1.13.1/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="../../contenido/LayoutMaster.css" rel="stylesheet" />
+    <script src="../../javascript/DataTableV2/DataTables-1.13.1/js/jquery.dataTables.js"></script>
+    <script src="../../javascript/bootstrap.js"></script>
+
+    <script src="../../javascript/DataTableV2/datatable-order-dom-checkbox.js"></script>
+    <script src="../../javascript/moment/moment-datetime.js"></script>
+    <script src="../../javascript/moment/moment.min.js"></script>
+    <link href="../../contenido/jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet" />
+    <script src="../../contenido/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="../../javascript/jquery.ui.datepicker.validation.js"></script>
+</head>
+<body class="o-layout" id="b-body">
+    <div class="o-body-container">
+        <div class="o-lista-anexos">
+
+            <div id="encabezado" class="o-alert">
+                <span id="nombre_encabezado">
+                    Detalle de Anexo
+                </span>
+            </div>
+
+            <div id="filtros" class="o-div-bordered">
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <table>
+                            <tr>
+                                <td class="text-right"><label id="lblAnexo">Anexo</label></td>
+                                <td class="text-left">
+                                    &nbsp;<label style="font-weight: normal;" id="lblDescAnexo">
+                                        VII-12. Funciones Generales de los Empleados Municipales.
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><label>Asignado a:</label></td>
+                                <td class="text-left">
+                                    &nbsp;<label style="font-weight: normal;" id="lblAsignadoA">
+                                        Usuario(a) Concentrador(a)
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div>
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <div id="form_botones">
+                            <a class="o-icon o-black"
+                               href="PDF/7529/ArchivoAdjunto.html"><button type="button" class="btn btn-success">Consultar PDF</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div>
+                <form id="form-tabla">
+                        <label style="font-weight: normal;"> Cant. Registros: 14 </label>
+                    <table id="tbl-anexos" class="table table-bordered table-striped o-table responsive u-width-100p">
+                        <thead class="o-tab-header__black" id="th-anexos">
+                            <tr class="o-white__font">
+
+                                        <th class="text-center">
+                                            Puesto Nominal
+                                        </th>
+                                        <th class="text-center">
+                                            Puesto Funcional
+                                        </th>
+                                        <th class="text-center">
+                                            Atribuciones
+                                        </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb-anexos">
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Coordinador de Ciencia de Datos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Coordinador(a) de Ciencia de Datos
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Supervisar al personal y las actividades del departamento bajo su responsabilidad.  Asignar tareas y dar seguimiento a los proyectos del personal a su cargo.  Evaluar peri&#243;dicamente que se cumplan las asignaciones y proyectos en las fechas establecidas.  Planificar e instrumentar el desarrollo de los proyectos para aprovechamiento de datos en la administraci&#243;n p&#250;blica del municipio.  Proponer soluciones desde la ciencia de datos para la toma de decisiones en el municipio. Investigar nuevas tecnolog&#237;as y m&#233;todos en ciencia de datos, ingenier&#237;a de datos y visualizaci&#243;n de datos para mejorar las capacidades t&#233;cnicas del equipo
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Auxiliar de Experiencia Ciudadana                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Auxiliar de Experiencia Ciudadana
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Cumplir con las asignaciones y proyectos en las fechas establecidas. Evaluar la implementaci&#243;n de los lineamientos y criterios de experiencia y usabilidad en los productos digitales del municipio. Identificar los criterios y KPIS de calidad seg&#250;n requerimientos y alcance solicitados.  Implementar las mejores pr&#225;cticas de evaluaci&#243;n y testeo de productos digitales. Realizar pruebas de usabilidad, funcionalidad y estr&#233;s, a las interfaces y sistemas de nuevas plataformas y desarrollos de software del municipio Monitorear de la correcta implementaci&#243;n de est&#225;ndares de dise&#241;o, interfaz y experiencia de usuario. Dise&#241;ar y crear pruebas automatizadas de las nuevas plataformas digitales del municipio, para evaluar la calidad de la experiencia y usabilidad. Monitorear de los niveles de calidad del c&#243;digo entregado en las nuevas plataformas web del municipio.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Auxiliar de Desarrollo                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Auxiliar de Desarrollo
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Asignar tareas y dar seguimiento a los proyectos del personal a su cargo. Establecer estrategias de adopci&#243;n de tecnolog&#237;as para el despliegue de microservicios. Establecer estrategias de integraci&#243;n de tecnolog&#237;as de microservicios que interoperen con las existentes y futuras. Dise&#241;ar bases de datos normalizadas adecuadas para su correcto uso de acuerdo a las necesidades actuales y futuras. Establecer estrategias de documentaci&#243;n de los productos desarrollados al interior, as&#237; como los requisitos de documentaci&#243;n derivados de productos contratados a terceros. Evaluar peri&#243;dicamente que se cumplan las asignaciones y proyectos en las fechas establecidas.  Planificar e instrumentar el desarrollo de los proyectos de digitalizaci&#243;n y desarrollo de nuevos productos digitales. Identificar las tecnolog&#237;as y reglas de negocio necesarios seg&#250;n requerimientos y alcance solicitados.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Jefa de Geom&#225;tica                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Jefe (a) de Geom&#225;tica
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Identificar, contextualizar y representar problemas desde una perspectiva territorial. Aplicar el conocimiento y uso de las herramientas t&#233;cnicas para la generaci&#243;n y gesti&#243;n de informaci&#243;n geoespacial. Apoyar y orientar a las dependencias sobre el manejo y uso de tecnolog&#237;as para la informaci&#243;n espacial. Auxiliar en el establecimiento de una gesti&#243;n adecuada, homologaci&#243;n de criterios e incorporaci&#243;n de par&#225;metros m&#237;nimos que garanticen calidad y permitan la interoperbilidad entre los usarios. Optimizar la utilizaci&#243;n e intercambio, procurando el manejo adecuado de los recursos y una democratizaci&#243;n de esta infromaci&#243;n. Dar seguimiento a los proyectos solicitados. Cumplir peri&#243;dicamente que se cumplan las asignaciones y proyectos en las fechas establecidas.  Apyar en la planificaci&#243;n e instrumentaci&#243;n del desarrollo de los proyectos de digitalizaci&#243;n y desarrollo de nuevos productos digitales.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Jefa de Oficina                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Jefe (a) de Oficina
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Coordinar, administrar y garantizar el buen uso de los Recursos Humanos, Financieros y Materiales que se requieren para la buena operaci&#243;n y funcionamiento de la Secretar&#237;a.    Supervisar y controlar el ejercicio del presupuesto autorizado.  Llevar la log&#237;stica de las reuniones y/o sesiones de trabajo cotidianas del Director y los Coordinadores con personal interno y/o externo, adem&#225;s de concentrar la informaci&#243;n a presentarse en cada reuni&#243;n o sesi&#243;n de trabajo, con la presentaci&#243;n correspondiente y la documentaci&#243;n soporte necesaria. Programar la log&#237;stica de los proyectos estrat&#233;gicos y de la operaci&#243;n diaria, adem&#225;s de las necesidades para llevar a cabo su desarrollo, con las diferentes &#225;reas de la Secretar&#237;a y en su caso con diferentes Dependencias y/o entidades municipales. Formular y tramitar en tiempo y forma las requisiciones de compra, &#243;rdenes de pago, solicitudes de cheque, reposiciones de fondo fijo, comprobaciones de gasto, etc. Controlar la emisi&#243;n de oficios y volantes as&#237; como definici&#243;n de contestaci&#243;n oficial.  Aplicar las normas y pol&#237;ticas relativas a los servicios personales de la Dependencia y servir de enlace con la Direcci&#243;n de Recursos Humanos para informar acerca de los movimientos de personal (altas, bajas, cambios), vacaciones, licencias, permisos, comisiones, incapacidades, pago de n&#243;mina, entre otros. Mantener comunicaci&#243;n con organizaciones externas (ONGs, Empresas, Ciudadanos y Proveedores, etc.). Programar y controlar los descansos, permisos y vacaciones del personal de la Oficina de la Direcci&#243;n. Mantener comunicaci&#243;n con todos los Directores de la Secretar&#237;a de Innovaci&#243;n y Gobierno Abierto.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Coordinadora de Proyectos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Coordinador(a) de Proyectos
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Generar y ejecutar la estrategia para llevar a cabo los proyectos estrategicos y los productos de la direcci&#243;n. Asegurar la entrega en tiempo y forma de los productos y proyectos de la direcci&#243;n. Asignar tiempos y tareas clave para la ejecuci&#243;n de los proyectos. Delegar a las coordinaciones las tareas correspondientes a llevar a cabo para la ejecucion de un proyecto. Llevar la comunicacion con externos y proveedores para la entrega de productos y seguimiento de proyectos Recibir las solicitudes de las dependencias de la Administraci&#243;n P&#250;blica Municipal para su evaluaci&#243;n y consiguiente ejecuci&#243;n. Recopilar informaci&#243;n y asesora la toma de desiciones en la vialidad de proyectos de la direcci&#243;n. Supervisar al personal y las actividades del departamento bajo su responsabilidad. Asignar tareas y dar seguimiento a los proyectos del personal a su cargo.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Coordinadora de Transparencia proactiva                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Coordinador(a) de Transparencia proactiva
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Especificar los criterios y funcionalidades para los productos digitales que permitan el uso y apertura de informaci&#243;n p&#250;blica de manera proactiva en formatos abiertos Dar seguimiento al desarrollo y p&#250;blicaci&#243;n de los productos digitales que permitan el uso y apertura de informaci&#243;n p&#250;blica de manera proactiva en formatos abiertos. Dise&#241;ar mecanismos y planes de trabajo para uso de la informaci&#243;n p&#250;blica en formatos abiertos en conjunto con ciudadan&#237;a, sociedad civil, academia, sector privado y p&#250;blico. Dar seguimiento a los mecanismos y plan de trabajo para uso de la informaci&#243;n p&#250;blica en formatos abiertos por la ciudadan&#237;a, sociedad civil, academia, sector privado y p&#250;blico. Coordinar mesas de trabajo con las &#225;reas responsables para la apertura de informaci&#243;n oportuna e integral en formatos abiertos, de acuerdo a la identificaci&#243;n denecesidades de la ciudadan&#237;a, sociedad civil, academ&#237;a y sector privado. Dar seguimiento a los resultados de las mesas de trabajo con las &#225;reas responsables para la apertura de informaci&#243;n oportuna e integral en formatos abiertos. Mapear e identificar los procesos y tratamientos de la informaci&#243;n con las &#225;reas responsables para una apertura integral de la informaci&#243;n que permita su uso en formatos abiertos. Apoyar en el dise&#241;o de mecanismos y procesos t&#233;cnicos con las &#225;reas responsables que permitan una mejora del tratamiento de la informaci&#243;n p&#250;blica, as&#237; como la protecci&#243;n de datos personales. Supervisar al personal y las actividades del departamento bajo su responsabilidad para el cumplimiento de las tareas a realizar
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Analista de Desarrollo                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Analista de Desarrollo
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Supervisar al personal y las actividades del departamento bajo su responsabilidad. Asignar tareas y dar seguimiento a los proyectos del personal a su cargo. Establecer estrategias de adopci&#243;n de tecnolog&#237;as para el despliegue de microservicios Establecer estrategias de integraci&#243;n de tecnolog&#237;as de microservicios que interoperen con las existentes y futuras Dise&#241;ar bases de datos normalizadas adecuadas para su correcto uso de acuerdo a las necesidades actuales y futuras Establecer estrategias de documentaci&#243;n de los productos desarrollados al interior, as&#237; como los requisitos de documentaci&#243;n derivados de productos contratados a terceros Evaluar peri&#243;dicamente que se cumplan las asignaciones y proyectos en las fechas establecidas.  Planificar e instrumentar el desarrollo de los proyectos de digitalizaci&#243;n y desarrollo de nuevos productos digitales. Identificar las tecnolog&#237;as y reglas de negocio necesarios seg&#250;n requerimientos y alcance solicitados.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Analista de Experiencia Ciudadana                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Analista de Experiencia Ciudadana
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Cumplir con las asignaciones y proyectos en las fechas establecidas. Evaluar la implementaci&#243;n de los lineamientos y criterios de experiencia y usabilidad en los productos digitales del municipio. Identificar los criterios y KPIS de calidad seg&#250;n requerimientos y alcance solicitados.  Implementar las mejores pr&#225;cticas de evaluaci&#243;n y testeo de productos digitales. Realizar pruebas de usabilidad, funcionalidad y estr&#233;s, a las interfaces y sistemas de nuevas plataformas y desarrollos de software del municipio Monitorear la correcta implementaci&#243;n de est&#225;ndares de dise&#241;o, interfaz y experiencia de usuario. Dise&#241;ar y crear pruebas automatizadas de las nuevas plataformas digitales del municipio, para evaluar la calidad de la experiencia y usabilidad. Monitorear de los niveles de calidad del c&#243;digo entregado en las nuevas plataformas web del municipio.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Jefa de Transparencia proactiva                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Jefe(a) de Transparencia proactiva
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Apoyar en la identificaci&#243;n y sistematizaci&#243;n de los criterios y funcionalidades para los productos digitales que permitan el uso y apertura de informaci&#243;n p&#250;blica de manera proactiva en formatos abiertos Apoyar para dar seguimiento al desarrollo y p&#250;blicaci&#243;n de los productos digitales que permitan el uso y apertura de informaci&#243;n p&#250;blica de manera proactiva en formatos abiertos. Apoyar al dise&#241;o de mecanismos y planes de trabajo para uso de la informaci&#243;n p&#250;blica en formatos abiertos en conjunto con ciudadan&#237;a, sociedad civil, academia, sector privado y p&#250;blico. Sistematizar y apoyar  al seguimiento de los mecanismos y plan de trabajo para uso de la informaci&#243;n p&#250;blica en formatos abiertos por la ciudadan&#237;a, sociedad civil, academia, sector privado y p&#250;blico. Apoyar para la coordinaci&#243;n y sistematizaci&#243;n de mesas de trabajo con las &#225;reas responsables para la apertura de informaci&#243;n oportuna e integral en formatos abiertos, de acuerdo a la identificaci&#243;n denecesidades de la ciudadan&#237;a, sociedad civil, academ&#237;a y sector privado. Apoyar para la sistematizaci&#243;n de resultados de las mesas de trabajo con las &#225;reas responsables para la apertura de informaci&#243;n oportuna e integral en formatos abiertos. Apoyar a mapear e identificar los procesos y tratamientos de la informaci&#243;n con las &#225;reas responsables para una apertura integral de la informaci&#243;n que permita su uso en formatos abiertos. Apoyar en el dise&#241;o de mecanismos y procesos t&#233;cnicos con las &#225;reas responsables que permitan una mejora del tratamiento de la informaci&#243;n p&#250;blica, as&#237; como la protecci&#243;n de datos personales. Entregar las tareas y actividades solicitadas en los tiempos considerados de entrega.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Director de Gobierno Digital                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Director(a) de Gobierno Digital
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Proponer y supervisar la aplicaci&#243;n de directrices, componentes, integraci&#243;n, protocolos de comunicaci&#243;n, atributos de calidad de la Arquitectura de Software de las aplicaciones a desarrollar por la Secretaria de Innovaci&#243;n y Gobierno Abierto de la Administraci&#243;n P&#250;blica Municipal. Dise&#241;ar y gestionar las plataformas tecnol&#243;gicas para la participaci&#243;n ciudadana del Municipio. Coordinar la digitalizaci&#243;n de tr&#225;mites y servicios a cargo de las Dependencias  del Municipio. Participar en el dise&#241;o, implementar y gestionar los mecanismos de identidad y firma digital. Dise&#241;ar, gestionar y actualizar la plataforma tecnol&#243;gica para la gesti&#243;n de tr&#225;mites y servicios de toda la Administraci&#243;n P&#250;blica del Municipio. Implementar la mudanza digital de tr&#225;mites y servicios a cargo de la Administraci&#243;n P&#250;blica del Municipio. Implementar las pol&#237;ticas y acciones necesarias para la gesti&#243;n y apertura de datos, el gobierno abierto y el gobierno digital en el Municipio. Realizar la entrega de servicios tecnol&#243;gicos de informaci&#243;n y comunicaciones desarrollados por la Secretar&#237;a y gestionar la capacitaci&#243;n a usuarios.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Coordinadora de Geom&#225;tica                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Coordinador(a) de Geom&#225;tica
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Identificar, contextualizar y representar problemas desde una perspectiva territorial Aplicar el conocimiento y uso de las herramientas t&#233;cnicas para la generaci&#243;n y gesti&#243;n de informaci&#243;n geoespacial Proponer y orientar a las dependencias sobre el manejo y uso de tecnolog&#237;as para la informaci&#243;n espacial. Establecer una gesti&#243;n adecuada, homologaci&#243;n de criterios e incorporaci&#243;n de par&#225;metros m&#237;nimos que garanticen calidad y permitan la interoperbilidad entre los usarios. Optimizar la utilizaci&#243;n e intercambio, procurando el manejo adecuado de los recursos y una democratizaci&#243;n de esta infromaci&#243;n  Supervisar al personal y las actividades del departamento bajo su responsabilidad. Asignar tareas y dar seguimiento a los proyectos del personal a su cargo. Evaluar peri&#243;dicamente que se cumplan las asignaciones y proyectos en las fechas establecidas.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Analista de Proyectos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Analista de Proyectos
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Apoyar en la generaci&#243;n y ejecuci&#243;n de las estrategias para llevar a cabo los proyectos estrategicos y los productos de la direcci&#243;n. Apoyar la entrega en tiempo y forma de los productos y proyectos de la direcci&#243;n. Auxiliar en el seguimiento a las solicitudes de las dependencias de la Administraci&#243;n P&#250;blica Municipal para su evaluaci&#243;n y ejecuci&#243;n.  Auxiliar en la recopilacion informaci&#243;n para los estudios de vialidad de proyectos de la direcci&#243;n.                                       Apoyar para llevar a cabo el mapeo de proyectos y actividades de la direcci&#243;n para priorizar las actividades de la direcci&#243;n.                                         Generar la documentaci&#243;n para seguimiento de la gestion de proyectos. Generar reportes y fichas para la administraci&#243;n de los proyectos. Entregar las tareas y actividades solicitadas en los tiempos considerados de entrega.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Jefa de Proyectos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Jefe(a) de Proyectos
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Apoyar en la generaci&#243;n y ejecuci&#243;n de las estrategias para llevar a cabo los proyectos estrategicos y los productos de la direcci&#243;n. Apoyar la entrega en tiempo y forma de los productos y proyectos de la direcci&#243;n.  Auxiliar en el seguimiento a las solicitudes de las dependencias de la Administraci&#243;n P&#250;blica Municipal para su evaluaci&#243;n y ejecuci&#243;n. Auxiliar en la recopilacion informaci&#243;n para los estudios de vialidad de proyectos de la direcci&#243;n.                                       Apoyar para llevar a cabo el mapeo de proyectos y actividades de la direcci&#243;n para priorizar las actividades de la direcci&#243;n.                                         Generar la documentaci&#243;n para seguimiento de la gestion de proyectos. Generar reportes y fichas para la administraci&#243;n de los proyectos. Entregar las tareas y actividades solicitadas en los tiempos considerados de entrega.
+                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tr>
+                        </tbody>
+                    </table>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

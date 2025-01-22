@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERMMy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../../../../javascript/ScriptsSite/data.js"></script>
+    <script src="../../../../javascript/jquery-3.4.1.js"></script>
+    <script src="../../../../javascript/jquery.validate.es.js"></script>
+    <script src="../../../../javascript/jquery.validate.js"></script>
+
+    <link href="../../../../contenido/font-awesome.css" rel="stylesheet" />
+    <link href="../../../../contenido/bootstrap.css" rel="stylesheet" />
+    <link href="../../../../javascript/DataTableV2/DataTables-1.13.1/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="../../../../contenido/LayoutMaster.css" rel="stylesheet" />
+    <script src="../../../../javascript/DataTableV2/DataTables-1.13.1/js/jquery.dataTables.js"></script>
+    <script src="../../../../javascript/bootstrap.js"></script>
+
+    <script src="../../../../javascript/DataTableV2/datatable-order-dom-checkbox.js"></script>
+    <script src="../../../../javascript/moment/moment-datetime.js"></script>
+    <script src="../../../../javascript/moment/moment.min.js"></script>
+    <link href="../../../../contenido/jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet" />
+    <script src="../../../../contenido/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="../../../../javascript/jquery.ui.datepicker.validation.js"></script>
+</head>
+<body class="o-layout" id="b-body">
+    <div class="o-body-container">
+        <div class="o-lista-anexos">
+
+            <div id="encabezado" class="o-alert">
+                <span id="nombre_encabezado">
+                    Archivos Adjuntos
+                </span>
+            </div>
+
+            <div id="filtros" class="o-div-bordered">
+                <table>
+                    <tr>
+                        <td><label id="lblAnexo">Anexo</label></td>
+                        <td>
+                            &nbsp;<label style="font-weight: normal;" id="lblDescAnexo">
+                                XII-08. Consejos, Comit&#233;s, Fideicomisos, Patronatos, Asociaciones y Herramientas vigentes.
+
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Asignado a:</label></td>
+                        <td>
+                            &nbsp;<label style="font-weight: normal;" id="lblAsignadoA">
+                                Marcela Jurado Castillo
+
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <form id="form-tabla">
+                    <table id="tbl-anexos" class="table table-bordered table-striped o-table responsive u-width-100p">
+                        <thead class="o-tab-header__black" id="th-anexos">
+                            <tr class="o-white__font">
+                                <th class="text-center">Acción</th>
+                                <th class="text-center">Nombre Archivo</th>
+                                <th class="text-center">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb-anexos">
+                                <tr>
+                                    <td class="text-center celda-cortada" width="10%">
+                                        <a class="o-icon o-black"
+                                           href="Acta de Instalaci&#243;n de Consejo 01092023.pdf"
+                                           target="_blank"><i class="fa fa-eye fa-lg" title="Ver archivo"></i></a>
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Acta de Instalaci&#243;n de Consejo 01092023.pdf
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Acta de Instalaci&#243;n de Consejo de Innovaci&#243;n Gubernamental
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center celda-cortada" width="10%">
+                                        <a class="o-icon o-black"
+                                           href="Acta de Primera Sesi&#243;n 01092023.pdf"
+                                           target="_blank"><i class="fa fa-eye fa-lg" title="Ver archivo"></i></a>
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Acta de Primera Sesi&#243;n 01092023.pdf
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Acta de Primera Sesi&#243;n de Consejo de Innovaci&#243;n Gubernamental 2023
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center celda-cortada" width="10%">
+                                        <a class="o-icon o-black"
+                                           href="Acta Sesion 09042024.pdf"
+                                           target="_blank"><i class="fa fa-eye fa-lg" title="Ver archivo"></i></a>
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Acta Sesion 09042024.pdf
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Acta de Primera Sesi&#243;n de Consejo de Innovaci&#243;n Gubernamental 2024
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center celda-cortada" width="10%">
+                                        <a class="o-icon o-black"
+                                           href="Acta21_agos_24_ConsejodeInnovacion.pdf"
+                                           target="_blank"><i class="fa fa-eye fa-lg" title="Ver archivo"></i></a>
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Acta21_agos_24_ConsejodeInnovacion.pdf
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        ACTA DE SEGUNDA SESI&#211;N DE CONSEJO DE INNOVACI&#211;N GUBERNAMENTAL PARA EL EJERCICIO 2024
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center celda-cortada" width="10%">
+                                        <a class="o-icon o-black"
+                                           href="Consejo de Innovaci&#243;n Gubernamental.pdf"
+                                           target="_blank"><i class="fa fa-eye fa-lg" title="Ver archivo"></i></a>
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        Consejo de Innovaci&#243;n Gubernamental.pdf
+                                    </td>
+                                    <td class="text-center celda-cortada" width="45%">
+                                        &#205;ndice de expediente consejo de innovaci&#243;n gubernamental
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

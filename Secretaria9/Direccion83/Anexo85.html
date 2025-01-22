@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERMMy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../../javascript/ScriptsSite/data.js"></script>
+    <script src="../../javascript/jquery-3.4.1.js"></script>
+    <script src="../../javascript/jquery.validate.es.js"></script>
+    <script src="../../javascript/jquery.validate.js"></script>
+
+    <link href="../../contenido/font-awesome.css" rel="stylesheet" />
+    <link href="../../contenido/bootstrap.css" rel="stylesheet" />
+    <link href="../../javascript/DataTableV2/DataTables-1.13.1/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="../../contenido/LayoutMaster.css" rel="stylesheet" />
+    <script src="../../javascript/DataTableV2/DataTables-1.13.1/js/jquery.dataTables.js"></script>
+    <script src="../../javascript/bootstrap.js"></script>
+
+    <script src="../../javascript/DataTableV2/datatable-order-dom-checkbox.js"></script>
+    <script src="../../javascript/moment/moment-datetime.js"></script>
+    <script src="../../javascript/moment/moment.min.js"></script>
+    <link href="../../contenido/jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet" />
+    <script src="../../contenido/jquery-ui-1.13.2/jquery-ui.js"></script>
+    <script src="../../javascript/jquery.ui.datepicker.validation.js"></script>
+</head>
+<body class="o-layout" id="b-body">
+    <div class="o-body-container">
+        <div class="o-lista-anexos">
+
+            <div id="encabezado" class="o-alert">
+                <span id="nombre_encabezado">
+                    Detalle de Anexo
+                </span>
+            </div>
+
+            <div id="filtros" class="o-div-bordered">
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <table>
+                            <tr>
+                                <td class="text-right"><label id="lblAnexo">Anexo</label></td>
+                                <td class="text-left">
+                                    &nbsp;<label style="font-weight: normal;" id="lblDescAnexo">
+                                        XIII-02. Relaci&#243;n de Expedientes y Actas en Archivo.
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><label>Asignado a:</label></td>
+                                <td class="text-left">
+                                    &nbsp;<label style="font-weight: normal;" id="lblAsignadoA">
+                                        Marcela Jurado Castillo
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div>
+                <div class="row">
+                    <div class="col-lg-12 text-right">
+                        <div id="form_botones">
+                            <a class="o-icon o-black"
+                               href="PDF/7542/ArchivoAdjunto.html"><button type="button" class="btn btn-success">Consultar PDF</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div>
+                <form id="form-tabla">
+                        <label style="font-weight: normal;"> Cant. Registros: 31 </label>
+                    <table id="tbl-anexos" class="table table-bordered table-striped o-table responsive u-width-100p">
+                        <thead class="o-tab-header__black" id="th-anexos">
+                            <tr class="o-white__font">
+
+                                        <th class="text-center">
+                                            Nombre Del Expediente
+                                        </th>
+                                        <th class="text-center">
+                                            Per&#237;odo
+                                        </th>
+                                        <th class="text-center">
+                                            Tipo De Clasificaci&#243;n
+                                        </th>
+                                        <th class="text-center">
+                                            Ubicaci&#243;n
+                                        </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb-anexos">
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Archivo 2022 Oficios Emitidos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2022
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Archivo 2022 Oficios Recibidos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2022
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Archivo 2023 Oficios Emitidos                                             </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Archivo 2023 (ene-ago) Oficios Recibidos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Archivo 2023 (ago-dic) Oficios Recibidos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Archivo 2024 (ene-jun) Oficios Recibidos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Consejo de Innovaci&#243;n Gubernamental                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Cartas Responsivas                                             </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Capacitaciones                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital.                                             </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Archivo 2024 (jul-sep) Oficios Recibidos                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+SIG-018-2024 CONTRATO XERTICA                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+SIG-020-2024 CONTRATO INCODE                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Ordenes de Compra                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Multianual
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Monterrey Beneficia                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+SIG-005-2022 CONTRATO CARTODATA 2.0 S.C                                             </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Multianual
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Contrato
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+SIG-016-2024 CONTRATO ONESMART                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Carpeta
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+Premio SIGA                                             </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2022-2023
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                Premio
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+CONTRATOS DIRECCI&#211;N DE GOBIERNO DIGITAL                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+LIBRERO 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la funci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+PROYECTO GOVTECH LATAM                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+PLAN DE APERTURA DE DATOS                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+COORDINACI&#211;N DE EXPERIENCIA CIUDADANA                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+PROYECTO DATASKETCH                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2023-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+COORDINACI&#211;N DE DESARROLLO                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+COORDINACI&#211;N DE TRASNPARENCIA PROACTIVA                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo. 
+*Nota: EL cierre del proyecto What Work Cities se encuentra resguardado por la oficina de la Secretar&#237;a en el librero con n&#250;mero de patrimonio 40620664                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+ACTAS DE ENTREGA DE PROYECTOS DE LA DIRECCI&#211;N DE GOBIERNO DIGITAL                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+ARCHIVO OFICIOS EMITIDOS (ENE-AGO) 2024                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ENERO-AGOSTO 
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+ARCHIVO OFICIOS EMITIDOS (SEPTIEMBRE)                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                SEPTIEMBRE
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. La ubicaci&#243;n digital se encuentra enunciada y disponible en el apartado de archivos anexos dentro de la opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+PREMIO SIGA                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2022-2023
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                CARPETA
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+RELACI&#211;N DE SISTEMAS                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2021-2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                ARCHIVO
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital. Ubicaci&#243;n digital dentro de opci&#243;n &quot;Adjuntar PDF&quot; en el presente anexo.                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+MARBETE ESTACIONAMIENTO No. B1058 FOLIO 46377                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARBETE
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                                <tr>
+
+                                            <td class="text-center celda-cortada">
+MARBETE ESTACIONAMIENTO No. B1115 FOLIO 19233                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                2024
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+                                                MARBETE
+                                            </td>
+                                                                                <td class="text-center celda-cortada">
+Librero 4072654 Direcci&#243;n de Gobierno Digital                                            </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </tr>
+                        </tbody>
+                    </table>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
